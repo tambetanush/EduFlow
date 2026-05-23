@@ -1,4 +1,4 @@
-EduFlow (FastAPI backend + React/Vite frontend)
+# EduFlow (FastAPI backend + React/Vite frontend)
 
 This repo has two projects:
 
@@ -74,7 +74,7 @@ Important:
 - Do not add Gemini keys in frontend env files.
 - Keep `AI_RATE_LIMIT_BACKEND=database` for multi-instance deployments.
 
-        2.5 Database Initialization
+          2.5 Database Initialization
 
     The backend **automatically runs migrations** and creates the database file (`eduflow.db`) when it starts. You do not need to run manual migration commands, but you can if you wish:
 
