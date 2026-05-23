@@ -6,6 +6,7 @@ This repo has two projects:
 - `frontend/` = React + Vite
 
 ## Architecture Overview
+
 This application uses a simplified, **synchronous architecture**. All AI features (reports and student explanations) are executed within the standard request-response cycle for immediate results. There are **NO dependencies** on Celery workers, Redis, or background processes. Everything runs in-process, making it extremely easy to deploy and test.
 
 The root folder does NOT have a `package.json`, so you must run npm commands inside `frontend/`.
@@ -21,7 +22,7 @@ All commands below are written for Windows PowerShell.
    Copy/paste (quotes are important because the path contains spaces):
 
 ```powershell
-cd '<PATH TO>\vidyasetu-crafted'
+cd '<PATH TO>\EduFlow'
 ```
 
 2. Backend setup (one-time)
@@ -73,8 +74,9 @@ Important:
 - Do not add Gemini keys in frontend env files.
 - Keep `AI_RATE_LIMIT_BACKEND=database` for multi-instance deployments.
 
-    2.5 Database Initialization
-The backend **automatically runs migrations** and creates the database file (`eduflow.db`) when it starts. You do not need to run manual migration commands, but you can if you wish:
+        2.5 Database Initialization
+
+    The backend **automatically runs migrations** and creates the database file (`eduflow.db`) when it starts. You do not need to run manual migration commands, but you can if you wish:
 
 ```powershell
 cd .\backend
