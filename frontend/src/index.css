@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ═══════ DAY THEME (Blue SaaS) ═══════ */
+  :root,
+  [data-theme="day"] {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 93%;
+    --sidebar-ring: 217 91% 60%;
+    --sidebar-muted: 215 16% 47%;
+
+    --success: 152 69% 40%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    --gradient-start: 217 91% 60%;
+    --gradient-end: 199 89% 48%;
+
+    --pattern-opacity: 0.03;
+  }
+
+  /* ═══════ NIGHT THEME (Dark Premium) ═══════ */
+  [data-theme="night"] {
+    --background: 222 47% 4%;
+    --foreground: 210 40% 96%;
+
+    --card: 222 47% 7%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 222 47% 7%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 213 94% 68%;
+    --primary-foreground: 222 47% 4%;
+
+    --secondary: 222 30% 14%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 222 30% 14%;
+    --muted-foreground: 215 20% 55%;
+
+    --accent: 222 30% 14%;
+    --accent-foreground: 210 40% 96%;
+
+    --destructive: 0 63% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 222 30% 16%;
+    --input: 222 30% 16%;
+    --ring: 213 94% 68%;
+
+    --sidebar-background: 222 47% 5%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 213 94% 68%;
+    --sidebar-primary-foreground: 222 47% 4%;
+    --sidebar-accent: 222 30% 12%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 222 30% 14%;
+    --sidebar-ring: 213 94% 68%;
+    --sidebar-muted: 215 20% 55%;
+
+    --success: 152 69% 50%;
+    --success-foreground: 222 47% 4%;
+    --warning: 38 92% 55%;
+    --warning-foreground: 222 47% 4%;
+    --info: 199 89% 58%;
+    --info-foreground: 222 47% 4%;
+
+    --gradient-start: 213 94% 68%;
+    --gradient-end: 199 89% 58%;
+
+    --pattern-opacity: 0.04;
+  }
+
+  /* ═══════ SUNSET THEME (Warm Orange) ═══════ */
+  [data-theme="sunset"] {
+    --background: 30 33% 97%;
+    --foreground: 20 30% 15%;
+
+    --card: 30 33% 100%;
+    --card-foreground: 20 30% 15%;
+
+    --popover: 30 33% 100%;
+    --popover-foreground: 20 30% 15%;
+
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 30 33% 94%;
+    --secondary-foreground: 20 30% 15%;
+
+    --muted: 30 33% 94%;
+    --muted-foreground: 20 15% 45%;
+
+    --accent: 30 33% 94%;
+    --accent-foreground: 20 30% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 25% 88%;
+    --input: 30 25% 88%;
+    --ring: 25 95% 53%;
+
+    --sidebar-background: 30 33% 100%;
+    --sidebar-foreground: 20 30% 15%;
+    --sidebar-primary: 25 95% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 30 33% 94%;
+    --sidebar-accent-foreground: 20 30% 15%;
+    --sidebar-border: 30 25% 90%;
+    --sidebar-ring: 25 95% 53%;
+    --sidebar-muted: 20 15% 45%;
+
+    --success: 152 69% 40%;
+    --success-foreground: 0 0% 100%;
+    --warning: 45 93% 47%;
+    --warning-foreground: 0 0% 100%;
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    --gradient-start: 25 95% 53%;
+    --gradient-end: 15 95% 50%;
+
+    --pattern-opacity: 0.04;
+  }
+
+  /* ═══════ FOREST THEME (Green Calm) ═══════ */
+  [data-theme="forest"] {
+    --background: 150 20% 97%;
+    --foreground: 200 25% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 25% 10%;
+
+    --primary: 162 72% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 155 25% 94%;
+    --secondary-foreground: 200 25% 10%;
+
+    --muted: 150 15% 95%;
+    --muted-foreground: 200 10% 45%;
+
+    --accent: 155 25% 94%;
+    --accent-foreground: 200 25% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 160 15% 90%;
+    --input: 160 15% 90%;
+    --ring: 162 72% 35%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 200 25% 10%;
+    --sidebar-primary: 162 72% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 155 25% 94%;
+    --sidebar-accent-foreground: 200 25% 10%;
+    --sidebar-border: 160 15% 92%;
+    --sidebar-ring: 162 72% 35%;
+    --sidebar-muted: 200 10% 55%;
+
+    --success: 152 69% 40%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    --gradient-start: 162 72% 35%;
+    --gradient-end: 175 65% 45%;
+
+    --pattern-opacity: 0.03;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.15);
+    color: hsl(var(--foreground));
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.2);
+    border-radius: 999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.35);
+  }
+}
+
+@layer components {
+  .vidya-card {
+    @apply bg-card rounded-2xl border border-border shadow-sm;
+  }
+
+  .vidya-card-hover {
+    @apply vidya-card transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 hover:border-primary/20;
+  }
+
+  .vidya-input {
+    @apply w-full rounded-xl border border-input bg-card px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring/20 focus:border-primary transition-all;
+  }
+
+  .vidya-label {
+    @apply text-sm font-medium text-foreground;
+  }
+
+  .vidya-table-header {
+    @apply text-xs font-semibold uppercase tracking-wider text-muted-foreground;
+  }
+
+  .vidya-gradient {
+    background: linear-gradient(135deg, hsl(var(--gradient-start)), hsl(var(--gradient-end)));
+  }
+
+  .vidya-gradient-soft {
+    background: linear-gradient(135deg, hsl(var(--gradient-start) / 0.08), hsl(var(--gradient-end) / 0.12));
+  }
+
+  .vidya-pattern {
+    background-image: radial-gradient(circle, hsl(var(--foreground) / var(--pattern-opacity)) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* Night theme glassmorphism */
+  [data-theme="night"] .vidya-card,
+  [data-theme="night"] .vidya-card-hover {
+    backdrop-filter: blur(12px);
+    background: hsl(var(--card) / 0.7);
+    border-color: hsl(var(--border) / 0.5);
+  }
+
+  [data-theme="night"] .vidya-gradient {
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.2);
+  }
+
+  /* Skeleton loading */
+  .vidya-skeleton {
+    @apply animate-pulse rounded-lg bg-muted;
+  }
+}

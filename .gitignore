@@ -1,0 +1,61 @@
+# =========================
+# Python (backend)
+# =========================
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Env files
+.env
+.env.*
+
+
+# Alembic
+alembic/versions/*.pyc
+
+# =========================
+# Node (frontend)
+# =========================
+node_modules/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Project-specific
+# =========================
+.deps/
+media/
+openapi.json
+
+./*.log
+DEPLOYMENT_CHECKLIST.md
+DEPLOYMENT_GUIDE.md
+code_audit_report.md
+code_audit_report_pass2.md
+
+
+
+
+.pytest_cache/
+pytest-cache-files-*
+**/pytest-cache-files-*
